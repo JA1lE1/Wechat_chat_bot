@@ -1,5 +1,4 @@
 import requests
-import md5sign
 from werobot import WeRoBot
 from tencent_ai import*
 from baidu_ai import*

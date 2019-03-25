@@ -1,5 +1,5 @@
 from aip import AipNlp
-from twilio.rest import Client
+# from twilio.rest import Client
 
 def is_pessimistic(text):
     #SDK的方式，腾讯的是API的方式
