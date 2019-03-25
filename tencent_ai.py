@@ -2,6 +2,7 @@ import hashlib
 import time
 import random
 import string
+import requests
 from urllib.parse import quote
 
 def curlmd5(src):
@@ -36,7 +37,7 @@ def get_content(plus_item):
     url = "https://api.ai.qq.com/fcgi-bin/nlp/nlp_textchat"
     # 获取请求参数
     plus_item = plus_item.encode('utf-8')
-    payload = md5sign.get_params(plus_item)
+    payload = get_params(plus_item)
     # r = requests.get(url,params=payload)
     r = requests.post(url,data=payload)
     return r.json()["data"]["answer"]
