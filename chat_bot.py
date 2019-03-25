@@ -19,8 +19,18 @@ robot = WeRoBot(enable_session=False,
  
 @robot.text
 def hello(message):   
-    rep= get_content(message.content)
-    return rep
+    if is_pessimistic(message.content):
+        rep = "十分抱歉给您带来的不便，我们这边马上安排工作人员和您沟通。"
+        # account_sid = "ACc290a6cb0258540264b0ebb1f6a37d60"
+        # auth_token = "fa5c345aedc44bc5888f843a3bbe53ed"
+        # client = Client(account_sid, auth_token)
+        # message = client.messages.create(to="+8617359870570",  # 区号+你的手机号码
+        #                                 from_="+12023359371",  # 你的 twilio 电话号码
+        #                                 body="你的客户xxx，需要你马上处理。")
+        return rep
+    else:    
+        rep= get_content(message.content)
+        return rep
 
 
 # 让服务器监听在 0.0.0.0:80
