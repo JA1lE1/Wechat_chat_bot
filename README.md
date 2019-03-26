@@ -51,15 +51,15 @@ git clone https://github.com/JA1lE1/wechat_bot.git
 #### 腾讯AI平台的应用接入
 
 - 步骤一，选择所需要的AI技术引擎
-  - ![腾讯AI指引](.\picture\腾讯AI指引.png)
+  - ![腾讯AI指引](./picture/腾讯AI指引.png)
 
 - 步骤二，登录控制台
-  - ![登录控制台](.\picture\登录控制台.png)
+  - ![登录控制台](./picture/登录控制台.png)
 - 创建自己的AI应用，并填写好相应内容
-  - ![创建应用](.\picture\创建应用.png)
+  - ![创建应用](./picture/创建应用.png)
 - 选择免费使用某个AI引擎，并将其能力接入刚刚创建的应用之中
-  - ![免费使用智能闲聊](.\picture\免费使用智能闲聊.png)
-  - ![接入能力](.\picture\接入能力.png)
+  - ![免费使用智能闲聊](./picture/免费使用智能闲聊.png)
+  - ![接入能力](./picture/接入能力.png)
   - 在控制台的应用管理中选择自己刚刚创建的应用，进入后点击应用信息，记录自己的APPID 和APPKEY，或将其复制在某个文本中，以备在==代码.py== 中修改为自己APPID和APPKEY.
 - 查看官方文档的智能闲聊部分可以发现只有PHP的tutorial，这里改用python实现同样的效果。
 - ==代码==
