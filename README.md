@@ -2,7 +2,9 @@
 
 ![image title](https://img.shields.io/badge/auther-JA1LE1-orange.svg)    ![image title](https://img.shields.io/badge/XMU-CSC-blue.svg)   ![image title](https://img.shields.io/badge/Ubuntu-passing-brightgreen.svg)
 
-本方案介绍几种（当前1种）实现当前流行的人工智能应用场景的入门级解决方案 ,推荐运行环境：Ubuntu Server 16.04.1 LTS 64位
+- 本方案介绍几种（当前1种）实现当前流行的人工智能应用场景的入门级解决方案 ,推荐运行环境：Ubuntu Server 16.04.1 LTS 64位
+- 喜欢的小哥哥，小姐姐欢迎fork哦，star就更好了（O(∩_∩)O哈哈~）
+- 本方案目前尚未提交supervisor配置，和后续的方案的计划
 
 ## 聊天机器人
 
@@ -11,7 +13,9 @@
 ---
 
 - 智能闲聊
+  - 接入腾讯AI开放平台
 - 情绪分析
+  - 接入百度AI开放平台
 
 #### 安装依赖
 
