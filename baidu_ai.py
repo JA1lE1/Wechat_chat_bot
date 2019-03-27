@@ -4,15 +4,15 @@ from aip import AipNlp
 def is_pessimistic(text):
     #SDK的方式，腾讯的是API的方式
 
-
+  #################在这里更改自己的信息#######################
     """ 你的 APPID AK SK """
-    APP_ID = '15839636'
-    API_KEY = 'S3XB5Kp4ryXMKGBGheoziUhN'
-    SECRET_KEY = 'HnkGj2gVPHnsvbGuKGiURcYH7FT2OEwX'
+    APP_ID = ''
+    API_KEY = ''
+    SECRET_KEY = ''
+  #################在这里更改自己的信息#######################
 
     client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
 
-    # text = "本来今天高高兴兴"
 
     """ 如果有可选参数 """
     options = {}

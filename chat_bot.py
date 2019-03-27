@@ -12,11 +12,13 @@ from baidu_ai import*
 #     r = requests.post(url,data=payload)
 #     return r.json()["data"]["answer"]
 
+#################在这里更改自己的信息#######################
 robot = WeRoBot(enable_session=False,
-        token = 'wechat',
-        APP_ID = 'wxd2037f04aeb582fb',
-        APP_SECRET = 'ti8e627JwSwqSVYoPDH2E6qR1GqP65cGRNqpKimdGEf')
- 
+        token = '',
+        APP_ID = '',
+        APP_SECRET = '')
+#################在这里更改自己的信息#######################
+
 @robot.text
 def hello(message):   
     if is_pessimistic(message.content):

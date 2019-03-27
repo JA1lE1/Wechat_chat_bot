@@ -16,9 +16,13 @@ def get_params(plus_item):
     time_stamp=str(int(t))
     # 请求随机字符串，用于保证签名不可预测
     nonce_str = ''.join(random.sample(string.ascii_letters + string.digits, 10))
+    #################在这里更改自己的信息#######################
+
     # 应用标志，这里修改成自己的id和key  
-    app_id = '2113459894'
-    app_key = 'ixd8rYrzksFStekr'
+    app_id = ''
+    app_key = ''
+
+     #################在这里更改自己的信息#######################
     params = {'app_id':app_id,'question':plus_item,'time_stamp':time_stamp,'nonce_str':nonce_str,'session':'10000'}
     sign_before = ''
     # 要对key排序再拼接
