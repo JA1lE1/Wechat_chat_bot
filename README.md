@@ -87,7 +87,7 @@ python3 chat_bot.py
 supervisord -c supervisord.conf
 ```
 
-##完整的步骤
+## 完整的步骤
 
 - sudo su
 - git clone https://github.com/JA1lE1/Wechat_chat_bot_private.git
