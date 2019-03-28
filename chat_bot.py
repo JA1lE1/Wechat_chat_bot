@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from werobot import WeRoBot
 from tencent_ai import*
 from baidu_ai import*

@@ -1,13 +1,18 @@
+# -*- coding: utf-8 -*-
 import hashlib
 import time
 import random
 import string
 import requests
 from urllib.parse import quote
+##try:
+#     from urllib.parse import quote
+# except ImportError:
+#      from urlparse import quote
 
 def curlmd5(src):
     m = hashlib.md5(src.encode('UTF-8'))
-    # 将得到的MD5值所有字符转换成大写
+    #将得到的MD5值所有字符转换成大写
     return m.hexdigest().upper()
 
 def get_params(plus_item):

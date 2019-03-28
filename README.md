@@ -3,10 +3,10 @@
 ![image title](https://img.shields.io/badge/auther-JA1LE1-orange.svg)    ![image title](https://img.shields.io/badge/XMU-CSC-blue.svg)   ![image title](https://img.shields.io/badge/Ubuntu-passing-brightgreen.svg)
 
 ## 写在前面
-- 本方案介绍几种（当前1种）实现当前流行的人工智能应用场景的入门级解决方案 ,推荐运行环境：Ubuntu Server 16.04.1 LTS 64位
-- 本方案目前尚未提交supervisor配置，和后续的方案的计划
+- 本方案介绍几种（当前1种）实现当前流行的人工智能应用场景的入门级解决方案 ,推荐运行环境：Ubuntu Server 16.04.1 LTS 64位,并打开80端口
+- 提交supervisor配置，暂时搁置后续的方案的计划
 - 修要修改的内容在3个py文件中均有说明。
-- 喜欢的小哥哥，小姐姐欢迎fork哦，star就更好了（O(∩_∩)O哈哈~）
+- 欢迎fork哦，star就更好了（O(∩_∩)O哈哈~）
 
 ## 聊天机器人
 
@@ -22,6 +22,9 @@
 #### 安装依赖
 
 ```python
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install python-pip
 pip install -r requirements.txt
 pip3 install -r requirements3.txt
 ```
@@ -81,8 +84,28 @@ python3 chat_bot.py
 #### supervisord 启动命令
 
 ```
-supervisord -c supervisor.conf
+supervisord -c supervisord.conf
 ```
+
+##完整的步骤
+
+- sudo su
+- git clone https://github.com/JA1lE1/Wechat_chat_bot_private.git
+- cd /home/ubuntu/Wechat_chat_bot
+- ls
+- pip install -r requirements.txt 
+- pip3 install -r requirements3.txt
+- 打开服务器的http80端口（AWS）
+- python3 chat_bot.py
+- 打开微信公众平台，提交配置（前提是配置好URL,Token，EncodingAESKey）
+- echo_supervisord_conf > /etc/supervisord.conf
+     cp -i supervisord.conf  /etc
+
+     在出现提示后输出y确定覆盖文件
+- mkdir /home/supervisor
+- cp -R supervisor /etc
+- supervisord -c /etc/supervisord.conf
+
 
 
 

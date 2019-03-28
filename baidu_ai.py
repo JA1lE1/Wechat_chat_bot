@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from aip import AipNlp
 # from twilio.rest import Client
 
@@ -12,6 +13,8 @@ def is_pessimistic(text):
   #################在这里更改自己的信息#######################
 
     client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
+
+    
 
 
     """ 如果有可选参数 """
